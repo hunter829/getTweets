@@ -3,5 +3,5 @@
   "consumerSecret":"t82CITrE1QnIE33kOe7kClRM4gljSQlpgk9FYslBPqMYJWhKuB",
   "access_token_key":"607807745-5eywU7ybjeHfudFHjU75KCOy8i6NmnbeUtDW0kq5",
   "access_token_secret":"Y2Yc4XFblR7e6dBxJJrUSyYDCznLH3EVQ7TypD7oQ24Fy",
-  "callbackURL":	"https://ancient-crag-62159.herokuapp.com/auth/twitter/callback"
+  "callbackURL":	"https://vast-coast-77959.herokuapp.com/auth/twitter/callback"
 }
