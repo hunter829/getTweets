@@ -26,8 +26,7 @@ with them. Iy also can be checked the home page of the Twitter users, and check 
 
 Three Favorites Tweets of Donald Trump, It may be seen one of them in the front of them
 ```json
-[ 
-
+[
 { created_at: 'Wed May 24 12:06:47 +0000 2017',
     id: 867351165180227600,
     id_str: '867351165180227584',
@@ -40,7 +39,7 @@ Three Favorites Tweets of Donald Trump, It may be seen one of them in the front 
     in_reply_to_user_id: null,
     in_reply_to_user_id_str: null,
     in_reply_to_screen_name: null,
-    user: 
+    user:
      { id: 52544275,
        id_str: '52544275',
        name: 'Ivanka Trump',
@@ -99,7 +98,7 @@ Three Favorites Tweets of Donald Trump, It may be seen one of them in the front 
     id_str: '866217061055434752',
     text: 'I had a wonderful time with the students at the American International School #Riyadh today. #SaudiaArabia https://t.co/AVzVV0W9Dm',
     truncated: false,
-    entities: 
+    entities:
      { hashtags: [Object],
        symbols: [],
        user_mentions: [],
@@ -112,7 +111,7 @@ Three Favorites Tweets of Donald Trump, It may be seen one of them in the front 
     in_reply_to_user_id: null,
     in_reply_to_user_id_str: null,
     in_reply_to_screen_name: null,
-    user: 
+    user:
      { id: 818876014390603800,
        id_str: '818876014390603776',
        name: 'Melania Trump',
@@ -171,7 +170,7 @@ Three Favorites Tweets of Donald Trump, It may be seen one of them in the front 
     id_str: '852968772088594434',
     text: 'Looking forward to hosting the annual Easter Egg Roll at the @WhiteHouse on Monday! https://t.co/nz7vucugx9',
     truncated: false,
-    entities: 
+    entities:
      { hashtags: [],
        symbols: [],
        user_mentions: [Object],
@@ -184,7 +183,7 @@ Three Favorites Tweets of Donald Trump, It may be seen one of them in the front 
     in_reply_to_user_id: null,
     in_reply_to_user_id_str: null,
     in_reply_to_screen_name: null,
-    user: 
+    user:
      { id: 818876014390603800,
        id_str: '818876014390603776',
        name: 'Melania Trump',
@@ -237,6 +236,7 @@ Three Favorites Tweets of Donald Trump, It may be seen one of them in the front 
     favorited: false,
     retweeted: false,
     possibly_sensitive: false,
-    lang: 'en' } ]
+    lang: 'en' }
+    ]
 
 ```
