@@ -15,7 +15,7 @@ client.get('statuses/user_timeline', params, function(error, tweets, response){}
 get the recently ten tweets and three favorite of the twitter handle
 
 and get the representive tweets among them randomly, I print these tweets in the console and compare the final results
-with them. Iy also can be checked the home page of the Twitter users, and check the recently tweets and user's like tweets
+with them. It also can be checked the home page of the Twitter users, check the recently tweets and user's like tweets
 
 
 
@@ -25,7 +25,7 @@ with them. Iy also can be checked the home page of the Twitter users, and check 
 </div>
 
 Three Favorites Tweets of Donald Trump, It may be seen one of them in the front of them
-```json
+```
 [
 { created_at: 'Wed May 24 12:06:47 +0000 2017',
     id: 867351165180227600,
