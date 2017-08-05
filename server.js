@@ -83,24 +83,11 @@ app.post('/',function(req,res){
   console.log(req.body);
 
   async.parallel({
-      favorites: function(cb) {
-          var params = {
-              screen_name: req.body.handle,
-              count: 3
-          };
-          client.get('favorites/list', params, function(error, tweets, response) {
-              if (!error) {
-                  cb(null, tweets);
-              }
-              else {
-                  cb(null, error);
-              }
-          });
-      },
       recent: function(cb) {
           var params = {
               screen_name: req.body.handle,
-              count: 10
+              count: 100,
+              exclude_replies:true
           };
           client.get('statuses/user_timeline', params, function(error, tweets, response) {
               if (!error) {
@@ -112,9 +99,9 @@ app.post('/',function(req,res){
           });
       }
   }, function(error, results) {
-      console.log("************TOP TEN FAVO TWEETS**************",results.favorites);
-      console.log("************TOP TEN RECENTLY TWEETS**********",results.recent);
-      var ret_list = [results.favorites,results.recent];
+      //console.log("************TOP TEN FAVO TWEETS**************",results.favorites);
+      //console.log("************TOP TEN RECENTLY TWEETS**********",results.recent);
+      var ret_list = [results.recent];
 
       var tweetList = [];
       ret_list.forEach(function(list) {
@@ -126,13 +113,18 @@ app.post('/',function(req,res){
               });
           }
       });
-      tweetList = _.uniq(tweetList, 'text');
+
+      tweetList = _.uniq(tweetList,function(list,key,value){
+        console.log("###############################################",tweetList);
+        return list.id;
+      });
       var oembedTweetList = [];
       var count = 0;
+
       async.forEachOf(tweetList, function(elem, key, cb) {
           if (key < 10) {
               var paramsList = {
-                  url: "https://www.twitter.com/filler/status/" + elem.id_str,
+                  url: "https://www.twitter.com/Interior/status/" + elem.id_str,
                   omit_script: 1,
                   theme:"dark"
               };
